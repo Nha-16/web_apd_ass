@@ -22,7 +22,7 @@
         </v-btn>
       </v-col>
       <v-col class="primarys lighten-2 py-4 text-center white--text" cols="12">
-        <h7>© 2016 - 2022 Asia-Pacific Development Bank Plc. </h7>
+        <h6>© 2016 - 2022 Asia-Pacific Development Bank Plc. </h6>
       </v-col>
     </v-row>
   </v-footer>

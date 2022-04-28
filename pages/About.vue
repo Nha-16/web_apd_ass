@@ -3,7 +3,7 @@
     <div class="bgs">
       <div class="container">
         <v-row>
-          <v-col class="left" v-for="text in texts" :key="text">
+          <v-col v-for="text in texts" :key="text.title" class="left">
             <h2>{{ text.title }}</h2>
             <p>
               {{ text.subtitle }}
@@ -18,7 +18,7 @@
           <v-col cols="12" sm="12" md="9" lg="9" xl="9">
             <h1>AN ALTERNATIVE TO THE BANKING OF THE PAST</h1>
             <hr class="mt-3" />
-            <p v-for="(list, i) in lists" :key="i" class="mt-5">
+            <p v-for="list in lists" :key="list" class="mt-5">
               {{ list }}
             </p>
           </v-col>
@@ -32,14 +32,14 @@
         </v-row>
         <v-row>
           <v-col
+            v-for="item in abt"
+            :key="item.title"
             class="mt-4"
             cols="12"
             sm="12"
             md="4"
             lg="4"
             xl="4"
-            v-for="item in abt"
-            :key="item"
           >
             <div class="abt">
               <v-img :src="item.src" contain width="70px" />
@@ -52,7 +52,7 @@
         <hr class="mt-3" />
       </v-container>
     </div>
-    <v-content class="mt-5">
+    <v-main class="mt-5">
       <div class="block"></div>
       <div class="block">
         <v-container>
@@ -79,7 +79,7 @@
           </v-row>
         </v-container>
       </div>
-    </v-content>
+    </v-main>
   </div>
 </template>
 
@@ -193,7 +193,7 @@ hr {
   /* margin: 0auto; */
 }
 .bgs {
-  background-image: url('../assets/images/abu.jpg');
+  background-image: url('../assets/images/bnner.jpg');
   /* height: 500px; */
   background-size: cover;
 }
@@ -216,6 +216,6 @@ hr {
   }
   .v-image.v-responsive.theme--light {
     margin: auto;
-}
+  }
 }
 </style>

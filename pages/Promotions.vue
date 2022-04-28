@@ -4,7 +4,7 @@
     <hr />
     <div class="mt-5">
       <v-row>
-        <v-col xs12 md6 v-for="item in items" :key="item">
+        <v-col v-for="item in items" :key="item.id" xs12 md6>
           <v-card class="mx-auto" max-width="350">
             <v-img class="white--text align-end" height="250px" :src="item.src">
             </v-img>
@@ -50,36 +50,42 @@ export default {
   data: () => ({
     items: [
       {
+        id: 1,
         src: 'https://apdbank.com.kh/pic/promo/Promotion_july_21_EN.jpg',
         title: 'WE REWARD FOR SAVINGS',
         discription:
           'YOU ARE REWARDED WITH MANY REWARDS AFTER PLACING A MINIMUM DEPOSIT OF USD70,000 WITH APD BANK TODAY.',
       },
       {
+        id: 2,
         src: 'https://apdbank.com.kh/pic/promo/photo_2021-05-12_11-43-07.jpg',
         title: 'IPHONES AWAIT',
         discription:
           'YOU ARE REWARDED WITH MANY REWARDS AFTER PLACING A MINIMUM DEPOSIT OF USD70000 WITH APD BANK TODAY.',
       },
       {
+        id: 3,
         src: 'https://apdbank.com.kh/pic/promo/photo_2021-02-18_09-19-52.jpg',
         title: 'FLY FOR FREE (EXPIRED)',
         discription:
           'OPEN A TERM DEPOSIT ACCOUNT WITH US TODAY TO GET FREE HELICOPTER RIDE FROM APD BANK.',
       },
       {
+        id: 4,
         src: 'https://apdbank.com.kh/pic/promo/20210225_Prosperity_Promotion_for_Website-09.jpg',
         title: 'PROSPERITY CAMPAIGN ',
         discription:
           'YOU ARE REWARDED WITH MANY REWARDS AFTER PLACING A MINIMUM DEPOSIT OF USD70000 WITH APD BANK TODAY.',
       },
       {
+        id: 5,
         src: 'https://apdbank.com.kh/pic/promo/Promotion_july_21_EN.jpg',
         title: 'WE REWARD FOR SAVINGS',
         discription:
           'YOU ARE REWARDED WITH MANY REWARDS AFTER PLACING A MINIMUM DEPOSIT OF USD70,000 WITH APD BANK TODAY.',
       },
       {
+        id: 6,
         src: 'https://apdbank.com.kh/pic/promo/photo_2021-03-23_16-32-52.jpg',
         title: 'IPHONES AWAIT',
         discription:

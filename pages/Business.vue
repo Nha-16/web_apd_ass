@@ -3,7 +3,7 @@
     <div class="bgs">
       <div class="container">
         <v-row>
-          <v-col class="left" v-for="data in datas" :key="data">
+          <v-col v-for="data in datas" :key="data.title" class="left" >
             <h2>{{ data.title }}</h2>
             <p>
               {{ data.subtitle }}
@@ -16,13 +16,13 @@
       <v-container>
         <v-row>
           <v-col
+            v-for="content in contents"
+            :key="content.title"
             cols="12"
             sm="12"
             md="9"
             lg="9"
             xl="9"
-            v-for="content in contents"
-            :key="content"
           >
             <h1>{{ content.title }}</h1>
             <hr class="mt-3" />

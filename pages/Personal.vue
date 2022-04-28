@@ -3,14 +3,14 @@
     <div class="bgs">
       <div class="container">
         <v-row>
-          <v-col class="left" v-for="item in items" :key="item">
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.subtitle }}</p>
+          <v-col class="left">
+            <h2>{{ items.title }}</h2>
+            <p>{{ items.subtitle }}</p>
           </v-col>
         </v-row>
       </div>
     </div>
-    <div class="content mt-4" v-for="item in content" :key="item">
+    <div v-for="item in content" :key="item.title" class="content mt-4" >
       <v-container>
         <v-row>
           <v-col cols="12" sm="12" md="9" lg="9" xl="9">
@@ -34,13 +34,12 @@ export default {
   name: 'PersonalPage',
   data() {
     return {
-      items: [
+      items: 
         {
           title: 'ACCOUNTS THAT GROW WITH YOU',
           subtitle:
             'Start saving today with a Savings account that makes earning interest and growing your wealth easy. Be one step closer to achieving your goals with a Savings Account that offers you freedom and flexibility.',
         },
-      ],
       content: [
         {
           title: 'EARN MORE INTEREST WITH A SAVINGS ACCOUNT',

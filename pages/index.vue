@@ -2,14 +2,14 @@
   <div>
     <v-carousel cycle hide-delimiters>
       <v-carousel-item
-        height="600"
-        v-for="(item, i) in items"
-        :key="i"
+        v-for="item in items"
+        :key="item.src"
         :src="item.src"
+        height="600"
       >
       </v-carousel-item>
     </v-carousel>
-    <div v-for="item in content" :key="item">
+    <div v-for="item in content" :key="item.id">
       <v-container class="mt-4">
         <v-row>
           <v-col cols="12" sm="6" md="6" xs="6" xl="6">

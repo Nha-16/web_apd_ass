@@ -36,7 +36,7 @@
         <v-row>
           <v-col
             v-for="item in items"
-            :key="item"
+            :key="item.id"
             cols="12"
             sm="12"
             md="4"
